@@ -25,32 +25,15 @@ layout: home
 |--|--|--|
 | week 1 | 3/21 | Ch 1 |
 | week 2 | 3/28 | Ch 2 Ch 3 |
-| week 3 | 4/ |Ch 4 Ch 5 Ch 6 |
-| week 4 | 4/ | |
-| week 5 | 4/ | |
-| week 6 | 4/ | |
-| week 7 | 5/ | |
-| week 8 | 5/ | |
-| week 9 | 5/ | |
-| week 10 | 5/ | |
-| week 11 | 6/ | |
-| week 12 | 6/ | |
-
-Ch 7
-Ch 8
-Ch 9
-Ch 10
-Ch 11
-Ch 12
-Ch 13
-Ch 14
-Ch 15
-Ch 16
-Ch 17
-Ch 18
-Ch 19
-Ch 20
-Ch 21
+| week 3 | 4/ |Ch 4 Ch 5 |
+| week 4 | 4/ | Ch 6 Ch 7 Ch 8|
+| week 5 | 4/ | Ch 9 Ch 10 |
+| week 6 | 4/ | Ch 11 Ch 12|
+| week 7 | 5/ | Ch 13   Ch 14 Ch 15|
+| week 8 | 5/ | Ch 16 Ch 17|
+| week 9 | 5/ | Ch 18 Ch 19|
+| week 10 | 5/ | Ch 20|
+| week 11 | 6/ | Ch 21|
 
 # 추천 진행 강의
 
