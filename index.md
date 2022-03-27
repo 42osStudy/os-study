@@ -5,7 +5,7 @@ layout: home
 진행 3/21 ~
 
 
-진행교재 : 공룡책 10판
+진행교재 : [공룡책 10판](https://www.os-book.com/OS10/)
 
 스터디원
 - yunselee
