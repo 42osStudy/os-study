@@ -23,17 +23,17 @@ layout: home
 
 |week|기간|Chapter|
 |--|--|--|
-| week 1 | 3/21 | Ch 1 |
-| week 2 | 3/28 | Ch 2 Ch 3 |
-| week 3 | 4/ |Ch 4 Ch 5 |
-| week 4 | 4/ | Ch 6 Ch 7 Ch 8|
-| week 5 | 4/ | Ch 9 Ch 10 |
-| week 6 | 4/ | Ch 11 Ch 12|
-| week 7 | 5/ | Ch 13   Ch 14 Ch 15|
-| week 8 | 5/ | Ch 16 Ch 17|
-| week 9 | 5/ | Ch 18 Ch 19|
-| week 10 | 5/ | Ch 20|
-| week 11 | 6/ | Ch 21|
+| week 1 | 4/1 | [Ch 1](./jekyll/2022-03-21-ch1.html) |
+| week 2 | 4/8 | Ch 2 Ch 3 |
+| week 3 | 4/15|Ch 4 Ch 5 |
+| week 4 | 4/22| Ch 6 Ch 7 Ch 8|
+| week 5 | 4/29| Ch 9 Ch 10 |
+| week 6 | 5/6 | Ch 11 Ch 12|
+| week 7 | 5/13| Ch 13   Ch 14 Ch 15|
+| week 8 | 5/20| Ch 16 Ch 17|
+| week 9 | 5/27| Ch 18 Ch 19|
+| week 10 |6/3  | Ch 20|
+| week 11 | 6/10| Ch 21|
 
 # 추천 진행 강의
 
@@ -101,5 +101,26 @@ layout: home
   - Chapter 21 Windows 10
 
 
----
+# 담당파트
 
+- ch1 yunselee
+- ch2 youngmki
+- ch3 chulee
+- ch4 dha
+- ch5 jaekim
+- ch6 mkim3
+- ch7  sujpark
+- ch8 jchoi
+- ch9 sujpark
+- ch10 tkang
+- ch11 chulee
+- ch12 sunmlee
+- ch13 hejang
+- ch14 jiwolee
+- ch15  jchoi
+- ch16 dha
+- ch17 mkim3
+- ch18 sunmlee
+- ch19 jaekim
+- ch20 youngmki
+- ch21 yunselee
