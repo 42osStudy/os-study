@@ -1,23 +1,237 @@
 ---
-title: License
-author: Tao He
-date: 2019-04-29
+title: Chapter 3 Processes
+author: chulee
+date: 2022-04-08
 category: Jekyll
 layout: post
 ---
 
-Chapter 3 Processes
+|         작성자          |   작성일   |
+| :-: | :-: |
+| chulee | 2022.04.05 |
 
-3.1 Process Concept 106
-3.2 Process Scheduling 110
-3.3 Operations on Processes 116
-3.4 Interprocess Communication 123
-3.5 IPC in Shared-Memory Systems 125
-3.6 IPC in Message-Passing Systems 127
-3.7 Examples of IPC Systems 132
-3.8 Communication in Client –
-Server Systems 145
-3.9 Summary 153
-Practice Exercises 154
-Further Reading 156
+# 3.0 Chapter Objectives
+- 프로세스의 개별 구성요소를 식별하고 운영체제에서 해당 구성요소가 어떻게 표현되고 스케줄 되는지 기술한다.
+- 운영체제에서 프로세스를 생성하고 종료하는 방법을 설명한다. 이러한 작업을 수행하는 적절한 시스템 콜을 사용하여 프로그램의 개발 등이 포함된다.
+- 공유 메모리 및 메시지 전달을 사용하는 프로세스 간 통신을 설명한다.
+- 파이프와 POSIX 공유 메모리를 사용하여 프로세스 간 통신을 수행하는 프로그램을 설계한다.
+- 소켓과 원격 프로시저 호출을 사용하여 클라이언트-서버 통신을 설명한다.
+- Linux 운영체제와 상호 작용하는 커널 모듈을 설계한다.
 
+
+# 3.1 Process Concept
+간단히 말해서 프로세스는 실행 중인 프로그램입니다.따라서 우리는 프로세스를 프로그램이 실행될 때 발생하는 순차적인 활동과 그 실행 순서를 유지하는 데 필요한 모든 리소스와 정보를 더한 것으로 생각해야 합니다.
+
+
+## 3.1.1 The Process
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_01PrcssLayout.jpg)
+*Figure 3.1: Layout of a process in memory*
+
+- 프로세스를 유지하는 데 필요한 정보를 프로세스 컨텍스트라고 합니다.
+- 운영체제에 따라 요소는 많이 변경됩니다.
+- 기본적인 프로세스 컨텍스트 요소:
+    - program counter
+    - CPU register contents
+    - the parts of the memory layout of the process, such as the text, data, stack, and heap.
+- 프로그램 != 프로세스
+- 프로그램은 디스크에 저장된 실행파일, 프로세스는 프로그램이 메모리에 올라가서 실행된 상태
+- 두 개 이상의 서로 다른 프로세스가 같은 프로그램을 동시에 실행할 수 있습니다. 예를 들어, 같은 컴퓨터에 로그인한 5명의 사람들이 모두 동시에 emacs 텍스트 편집기를 사용하고 있을 수 있습니다. 이와 같은 상황에서는 5개의 프로세스가 동일한 프로그램을 동시에 실행하게 됩니다. 컴퓨터의 주 메모리에는 프로그램(텍스트)의 복사본이 하나만 있을 것입니다. 그러나 각 프로세스에는 고유한 데이터, 프로그램 카운터, CPU 레지스터 내용 등이 있습니다.
+
+## 3.1.2 The Process
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_02prcssState.jpg)
+*Figure 3.2: Diagram of process state*
+
+프로세스 상태 모델은 여러개가 있다. 이 책에서는 Five-State Process Model에 대해서 설명한다.
+- 새로운 (new) : 프로세스가 생성 중이다.
+- 실행 (running) : 명령어들이 실행되고 있다.
+- 대기 (waiting) : 프로세스가 어던 이벤트(입출력 완료 또는 신호)가 일어나길 기다린다.
+- 준비 (ready) : 프로세스가 처리기에 할당되기를 기다린다.
+- 종료 (terminated) : 프로세스의 실행이 종료되었다.
+
+## 3.1.3 Process Control Block
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_03PCB.jpg)
+*Figure 3.3: Process control block (PCB)*
+
+PCB 요소
+- 프로세스 상태
+- 프로세스 번호
+- 프로그램 카운터
+- 레지스터
+- 메모리 제한
+- CPU-스케줄링 정보
+- 오픈 파일 리스트
+- 회계 정보 (자원 이용률)
+
+## 3.1.4 Threads
+
+한 프로세스에 다수의 실행 스레드를 가질 수 있음.  
+스레드를 지원하는 시스템에서의 PCB는 각 스레드에 관한 정보를 포함하도록 확장함.
+
+# 3.2 Process Scheduling
+
+다중 프로그래밍 정도 : 현재 메모리에 있는 프로세스의 수  
+I/O 바운드 프로세스 : I/O에 많은 시간을 소비하는 프로세스  
+CPU 바운드 프로세스 : CPU 계산에 많은 시간을 소비하는 프로세스
+
+## 3.2.1 Scheduling Queues
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_04rdy+wtQueues.jpg)
+*Figure 3.4: The ready queue and wait queues*
+
+OS는 디스패치(실행을 위해 선택됨)되기를 기다리는 준비 대기열을 유지 관리합니다.
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_05Q-diagram.jpg)
+*Figure 3.5: Queueing-diagram representation of process scheduling*
+
+OS는 또한 프로세스가 I/O 완료, 인터럽트 또는 자식 프로세스의 종료와 같은 이벤트를 기다리는 다른 대기열인 대기 대기열을 유지 관리합니다.
+
+## 3.2.2 CPU Scheduling
+CPU 스케줄러의 역할
+- 준비 큐에 있는 프로세스 중에서 선택된 하나의 프로세스에 CPU 코어를 할당
+- CPU를 할당하기 위한 새 프로세스를 자주 선택해야 함
+- I/O 바운드 프로세스는 I/O 작업전 몇 밀리초 동안만 실행될 수 도 있음
+- CPU 바운드 프로세스의 경우 일정 시간이 지나면 다른 프로세스로 스케줄링하도록 설계
+
+## 3.2.3 Context Switch
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_06cntxtSwtch.jpg)
+*Figure 3.6: Diagram showing context switch from process to process*
+
+**CPU의 현재 상태를 저정하고(state save), 나중에 연산을 재개하기 위해 복구 작업을 수행(state restore)**
+
+# 3.3 Operations on Processes
+
+## 3.3.1 Process Creation
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_07prcssFamTree.jpg)
+*Figure 3.7: A tree of processes on a typical Linux system*
+
+대부분의 운영 체제는 부팅 시 몇 가지 프로세스를 빌드합니다. 그 후, 기존의 상위 프로세스는 시스템 호출을 통해 새로운 하위 프로세스를 생성합니다. 자식 프로세스는 시스템 호출을 사용하여 자신의 자식을 만들 수 있습니다.
+
+```c
+#include <sys/types.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+  pid_t pid;
+  
+  /* fork a child process */
+  pid = fork();
+  
+  if (pid < 0) { /* error occurred */
+    fprintf(stderr, "Fork Failed");
+    return 1;
+  }
+  else if (pid == 0) { /* child process */
+    execlp("/bin/1s","1s",NULL) ;
+  }
+  else { /* parent process */
+    /* parent will wait for the child to complete */
+    wait (NULL) ;
+    printf ("Child Complete") ;
+  }
+  return 0;
+}
+```
+*Code : Creating a separate process using the UNIX fork() system call*
+
+[fork 함수 추가 설명](https://thdev.net/176)
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_09fork().jpg)
+*Figure 3.9: Process creation using the fork() system call*
+
+## 3.3.2 Process Termination
+
+- 프로세스는 마지막에 exit 시스템 콜을 사용하여 운영체제에 종료를 요청
+- 부모 프로세스는 자식 프로세스의 상태 코드를 받을 수 있음(wait 함수)
+- 좀비 프로세스, 고아 프로세스는 init 프로세스가 주기적으로 wait 함수를 실행 하여서 제거함
+
+# 3.4 Interprocess Communication (IPC)
+
+**독립적인 프로세스** : 다른 프로레스들과 데이터를 공유하지 않는 프로세스  
+**협력적인 프로세스** : 시스템에서 실행 중인 다른 프로세스들에 영향을 주거나 받는 프로세스
+
+### 협력 프로세스를 추구하는 이유
+- **정보 공유**
+- **계산 가속화** : 병렬로 실행하게끔 할 수 있기에
+- **모듈성** : 더 나은 프로그램 디자인을 얻을 수 있음
+
+### IPC 종류
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_11commModels.jpg)
+*Figure 3.11: Communication models (a) shared memory (b) message passing*
+
+공유 메모리(shared memory) 모델
+- 두 개의 다른 프로세스가 사용할 수 있는 메모리 영역이 설정
+- 두 프로세스는 공유 메모리의 영역에 쓰고 읽는 것만으로 통신
+
+메시지 전달(message passing) 모델
+- 시스템 호출을 사용하여 메시지를 교환하므로 OS는 통신 프로세스의 중개자, 픽업 및 배달 서비스 역할을 함
+
+# 3.5 IPC in Shared-Memory Systems
+
+**특징**
+- 프로세스의 통신은 운영 체제가 아닌 사용자 프로세스의 제어 하에 있습니다.
+- 주요 문제는 사용자 프로세스가 공유 메모리에 액세스할 때 작업을 동기화할 수 있는 메커니즘을 제공하는 것입니다.
+
+# 3.6 IPC in Message-Passing Systems
+
+**특징** : 동일한 주소 공간을 공유하지 않아도 프로세스들이 통신이 가능하다.
+
+메시지 전달 시스템의 주요 함수
+- send(...)
+- receive(...)
+
+## 3.6.1 Naming
+
+- 메시지 기반 통신은 직접 또는 간접적일 수 있다.
+- 즉, 프로세스가 메시지를 서로 직접 처리하거나 메일박스 또는 포트로 알려진 데이터 구조 대신 처리할 수 있다.
+- 메일박스는 파일 또는 장치와 몇 가지 유사점이 있으므로 소유자 및 권한 설정이 있을 수 있다.
+
+## 3.6.2 Synchronization
+
+봉쇄형 보내기 : 보낸 메시지가 수신 프로세스 또는 메일박스한테 수신 될때까지 봉쇄    
+비봉쇄형 보내기 : 메시지를 보내고 작업을 재시작  
+봉쇄형 받기 : 메시지를 수신 할때까지 봉쇄  
+비봉쇄형 받기 : 유효한 메시지 또는 빈 문자열(null)을 받음.
+
+## 3.6.3 Buffering
+
+교환되는 메시지는 **임시 큐**에 들어 있음
+
+큐 구현 방식
+- 무용량 (zero capacity) : 큐 크기가 0, 대기하는 메시지 X, 수신할 때까지 대기
+- 유한 용량(bounded capacity) : 유한한 크기 n을 가짐, 꽉 차면 대기
+- 무한 용량(unbounded capacity) : 무한한 용량, 얼마든지 큐에 저장가능, 절대 대기 안함
+
+# 3.7 Examples of IPC Systems
+
+## 3.7.4 Pipes
+
+### 3.7.4.1 Ordinary Pipes
+
+### 3.7.4.1 Named Pipes
+
+# 3.8 Communication in Client
+
+## 3.8.1 Socket
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_26sockets.jpg)
+*Figure 3.26: Communication using sockets*
+
+- 통신은 한 쌍의 소켓 간에 구성됩니다.
+- 1024 미만의 모든 포트는 잘 알려져 있으며 표준 서비스에 사용됩니다.
+- 프로세스가 실행 중인 시스템을 나타내는 특수 IP 주소 127.0.0.1(루프백)
+
+## 3.8.2 Remote Procedure Calls, RPC
+
+![](https://www.cs.csustan.edu/~john/Classes/Previous_Semesters/CS3750_OperatingSys_I/2020_02_Spr/Notes/Chap03/3_29RPC.jpg)
+*Figure 3.29: Execution of a remote procedure call (RPC)*
+
+RPC를 사용하면 클라이언트가 로컬에서 프로시저를 호출하는 것과 같은 방식으로 네트워크를 통해서만 연결된 원격 호스트에서 프로시저를 호출할 수 있습니다.
+
+# Practice Exercises
+[PDF](https://codex.cs.yale.edu/avi/os-book/OS10/practice-exercises/PDF-practice-solu-dir/3.pdf)
