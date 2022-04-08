@@ -24,7 +24,7 @@ layout: home
 |week|기간|Chapter|
 |--|--|--|
 | week 1 | 4/1 | [Ch 1](./jekyll/2022-03-21-ch1.html) |
-| week 2 | 4/8 | Ch 2 Ch 3 |
+| week 2 | 4/8 | Ch 2 [Ch 3](./jekyll/2022-04-08-ch3.html) |
 | week 3 | 4/15|Ch 4 Ch 5 |
 | week 4 | 4/22| Ch 6 Ch 7 Ch 8|
 | week 5 | 4/29| Ch 9 Ch 10 |
