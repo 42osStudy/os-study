@@ -25,15 +25,20 @@ layout: home
 |--|--|--|
 | week 1 | 4/1 | [Ch 1](./jekyll/2022-03-21-ch1.html) |
 | week 2 | 4/8 | Ch 2 [Ch 3](./jekyll/2022-04-08-ch3.html) |
-| week 3 | 4/15|Ch 4 Ch 5 |
-| week 4 | 4/22| Ch 6 Ch 7 Ch 8|
-| week 5 | 4/29| Ch 9 Ch 10 |
-| week 6 | 5/6 | Ch 11 Ch 12|
-| week 7 | 5/13| Ch 13   Ch 14 Ch 15|
-| week 8 | 5/20| Ch 16 Ch 17|
-| week 9 | 5/27| Ch 18 Ch 19|
-| week 10 |6/3  | Ch 20|
-| week 11 | 6/10| Ch 21|
+| week 3 | 4/15|Ch 4 |
+| week 4 | 4/22| Ch 5  |
+| week 5 | 4/29|  Ch 6 |
+| week 6 | 5/6 | Ch 7  |
+| week 7 | 5/13| Ch 8  |
+| week 8 | 5/20|  Ch 9 |
+| week 9 | 5/27| Ch 10 |
+| week 10 |6/3  | Ch 11 |
+| week 11 | 6/10| Ch 12|
+| week 12 | 6/17| Ch 13|
+| week 13 | 6/24| Ch 17|
+| week 14 | 7/1| Ch 18 19|
+| week 15 | 7/8| Ch 20|
+| week 15 | 7/15| Ch 21|
 
 # 추천 진행 강의
 
