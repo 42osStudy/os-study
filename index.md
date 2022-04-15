@@ -35,10 +35,13 @@ layout: home
 | week 10 |6/3  | Ch 11 |
 | week 11 | 6/10| Ch 12|
 | week 12 | 6/17| Ch 13|
-| week 13 | 6/24| Ch 17|
-| week 14 | 7/1| Ch 18 19|
-| week 15 | 7/8| Ch 20|
-| week 15 | 7/15| Ch 21|
+| week 13 | 6/24| Ch 14, 15|
+| week 14 | 7/1| Ch 15 |
+| week 15 | 7/8| Ch 16|
+| week 16 | 7/15| Ch 17, 18|
+| week 17 | 7/22| Ch 19|
+| week 18 | 7/29| Ch 20|
+| week 19 | 8/5| Ch 21|
 
 # 추천 진행 강의
 
