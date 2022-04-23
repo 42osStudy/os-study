@@ -7,6 +7,8 @@ layout: home
 
 진행교재 : [공룡책 10판](https://www.os-book.com/OS10/)
 
+[repo](https://github.com/42osStudy/os-study)
+
 스터디원
 - yunselee
 - chulee
@@ -26,7 +28,7 @@ layout: home
 | week 1 | 4/1 | [Ch 1](./jekyll/2022-03-21-ch1.html) |
 | week 2 | 4/8 | [Ch 2](./jekyll/2022-04-08-ch2.html) [Ch 3](./jekyll/2022-04-08-ch3.html) |
 | week 3 | 4/15| [Ch 4](./jekyll/2022-04-15-ch4.html) |
-| week 4 | 4/22| Ch 5  |
+| week 4 | 4/22| [Ch 5](./jekyll/2022-04-22-ch5.html)  |
 | week 5 | 4/29|  Ch 6 |
 | week 6 | 5/6 | Ch 7  |
 | week 7 | 5/13| Ch 8  |
