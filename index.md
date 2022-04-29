@@ -17,11 +17,11 @@ layout: home
 - jaekim
 - jchoi
 - jiwolee
-- mkim3
 - sujpark
-- sunmlee
 - tkang
 - youngmki
+- mkim3 (~week5)
+- sunmlee (~week5)
 
 |week|기간|Chapter|
 |--|--|--|
@@ -29,7 +29,7 @@ layout: home
 | week 2 | 4/8 | [Ch 2](./jekyll/2022-04-08-ch2.html) [Ch 3](./jekyll/2022-04-08-ch3.html) |
 | week 3 | 4/15| [Ch 4](./jekyll/2022-04-15-ch4.html) |
 | week 4 | 4/22| [Ch 5](./jekyll/2022-04-22-ch5.html)  |
-| week 5 | 4/29|  Ch 6 |
+| week 5 | 4/29|  [Ch 6](./jekyll/2022-04-29-ch6.html) |
 | week 6 | 5/6 | Ch 7  |
 | week 7 | 5/13| Ch 8  |
 | week 8 | 5/20|  Ch 9 |
@@ -118,19 +118,19 @@ layout: home
 - ch3 chulee
 - ch4 dha
 - ch5 jaekim
-- ch6 mkim3
-- ch7  sujpark
+- ch6 yunselee
+- ch7 sujpark
 - ch8 jchoi
 - ch9 sujpark
 - ch10 tkang
 - ch11 chulee
-- ch12 sunmlee
+- ch12 -
 - ch13 hejang
 - ch14 jiwolee
 - ch15  jchoi
 - ch16 dha
-- ch17 mkim3
-- ch18 sunmlee
+- ch17 -
+- ch18 -
 - ch19 jaekim
 - ch20 youngmki
 - ch21 yunselee
