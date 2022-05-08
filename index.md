@@ -4,12 +4,12 @@ layout: home
 
 진행 3/21 ~
 
-
 진행교재 : [공룡책 10판](https://www.os-book.com/OS10/)
 
 [repo](https://github.com/42osStudy/os-study)
 
 스터디원
+
 - yunselee
 - chulee
 - dha
@@ -23,40 +23,41 @@ layout: home
 - mkim3 (~week5)
 - sunmlee (~week5)
 
-|week|기간|Chapter|
-|--|--|--|
-| week 1 | 4/1 | [Ch 1](./jekyll/2022-03-21-ch1.html) |
-| week 2 | 4/8 | [Ch 2](./jekyll/2022-04-08-ch2.html) [Ch 3](./jekyll/2022-04-08-ch3.html) |
-| week 3 | 4/15| [Ch 4](./jekyll/2022-04-15-ch4.html) |
-| week 4 | 4/22| [Ch 5](./jekyll/2022-04-22-ch5.html)  |
-| week 5 | 4/29|  [Ch 6](./jekyll/2022-04-29-ch6.html) |
-| week 6 | 5/6 | Ch 7  |
-| week 7 | 5/13| Ch 8  |
-| week 8 | 5/20|  Ch 9 |
-| week 9 | 5/27| Ch 10 |
-| week 10 |6/3  | Ch 11 |
-| week 11 | 6/10| Ch 12|
-| week 12 | 6/17| Ch 13|
-| week 13 | 6/24| Ch 14, 15|
-| week 14 | 7/1| Ch 15 |
-| week 15 | 7/8| Ch 16|
-| week 16 | 7/15| Ch 17, 18|
-| week 17 | 7/22| Ch 19|
-| week 18 | 7/29| Ch 20|
-| week 19 | 8/5| Ch 21|
+| week    | 기간 | Chapter                                                                   |
+| ------- | ---- | ------------------------------------------------------------------------- |
+| week 1  | 4/1  | [Ch 1](./jekyll/2022-03-21-ch1.html)                                      |
+| week 2  | 4/8  | [Ch 2](./jekyll/2022-04-08-ch2.html) [Ch 3](./jekyll/2022-04-08-ch3.html) |
+| week 3  | 4/15 | [Ch 4](./jekyll/2022-04-15-ch4.html)                                      |
+| week 4  | 4/22 | [Ch 5](./jekyll/2022-04-22-ch5.html)                                      |
+| week 5  | 4/29 | [Ch 6](./jekyll/2022-04-29-ch6.html)                                      |
+| week 6  | 5/6  | [Ch 7](./jekyll/2022-05-06-ch7.html)                                      |
+| week 7  | 5/13 | Ch 8                                                                      |
+| week 8  | 5/20 | Ch 9                                                                      |
+| week 9  | 5/27 | Ch 10                                                                     |
+| week 10 | 6/3  | Ch 11                                                                     |
+| week 11 | 6/10 | Ch 12                                                                     |
+| week 12 | 6/17 | Ch 13                                                                     |
+| week 13 | 6/24 | Ch 14, 15                                                                 |
+| week 14 | 7/1  | Ch 15                                                                     |
+| week 15 | 7/8  | Ch 16                                                                     |
+| week 16 | 7/15 | Ch 17, 18                                                                 |
+| week 17 | 7/22 | Ch 19                                                                     |
+| week 18 | 7/29 | Ch 20                                                                     |
+| week 19 | 8/5  | Ch 21                                                                     |
 
 # 추천 진행 강의
 
 공룡책을 기본 교재로 사용하는 대학 수업 강의
 
-- 주니온 교수님 [유튜브](https://www.youtube.com/playlist?list=PLHqxB9kMLLaOs2BM2KbuvttBYCgDoFm-5)   [인프런/강의자료](https://www.inflearn.com/course/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EA%B3%B5%EB%A3%A1%EC%B1%85-%EC%A0%84%EA%B3%B5%EA%B0%95%EC%9D%98)
+- 주니온 교수님 [유튜브](https://www.youtube.com/playlist?list=PLHqxB9kMLLaOs2BM2KbuvttBYCgDoFm-5) [인프런/강의자료](https://www.inflearn.com/course/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EA%B3%B5%EB%A3%A1%EC%B1%85-%EC%A0%84%EA%B3%B5%EA%B0%95%EC%9D%98)
 
 - 양희재 교수님 [유튜브](https://www.youtube.com/playlist?list=PLK4xviZcdB9ieuusJ5j1UYZMFTuAgZCq8) [kocw/강의자료](http://www.kocw.net/home/search/kemView.do?kemId=978503)
 
 - PART ONE OVERVIEW
+
   - Chapter 1 Introduction
   - Chapter 2 Operating-System Structures
-  
+
 - PART TWO PROCESS MANAGEMENT
 
   - Chapter 3 Processes
@@ -66,11 +67,11 @@ layout: home
 
 - PART THREE PROCESS SYNCHRONIZATION
 
-    - Chapter 6 Synchronization Tools
+  - Chapter 6 Synchronization Tools
 
-    - Chapter 7 Synchronization Examples
+  - Chapter 7 Synchronization Examples
 
-    - Chapter 8 Deadlocks
+  - Chapter 8 Deadlocks
 
 - PART FOUR MEMORY MANAGEMENT
 
@@ -110,7 +111,6 @@ layout: home
 
   - Chapter 21 Windows 10
 
-
 # 담당파트
 
 - ch1 yunselee
@@ -127,7 +127,7 @@ layout: home
 - ch12 -
 - ch13 hejang
 - ch14 jiwolee
-- ch15  jchoi
+- ch15 jchoi
 - ch16 dha
 - ch17 -
 - ch18 -
