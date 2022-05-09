@@ -4,7 +4,7 @@ layout: home
 
 진행 3/21 ~
 
-진행교재 : [공룡책 10판](https://www.os-book.com/OS10/)
+진행교재 : 공룡책 10판 [공식 site](https://www.os-book.com/OS10/)
 
 [repo](https://github.com/42osStudy/os-study)
 
