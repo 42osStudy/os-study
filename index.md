@@ -32,7 +32,7 @@ layout: home
 | week 5  | 4/29 | [Ch 6](./jekyll/2022-04-29-ch6.html)                                      |
 | week 6  | 5/6  | [Ch 7](./jekyll/2022-05-06-ch7.html)                                      |
 | week 7  | 5/13 | Ch 8                                                                      |
-| week 8  | 5/20 | Ch 9                                                                      |
+| week 8  | 5/20 | [Ch 9](./jekyll/2022-05-20-ch9.html)                                                                      |
 | week 9  | 5/27 | Ch 10                                                                     |
 | week 10 | 6/3  | Ch 11                                                                     |
 | week 11 | 6/10 | Ch 12                                                                     |
