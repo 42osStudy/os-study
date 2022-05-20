@@ -129,7 +129,7 @@ layout: home
 - ch14 jiwolee
 - ch15 jchoi
 - ch16 dha
-- ch17 -
+- ch17 chulee
 - ch18 -
 - ch19 jaekim
 - ch20 youngmki
