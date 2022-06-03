@@ -34,7 +34,7 @@ layout: home
 | week 7  | 5/13 | [Ch 8](./jekyll/2022-05-13-ch8.html)                                      |
 | week 8  | 5/20 | [Ch 9](./jekyll/2022-05-20-ch9.html)                                      |
 | week 9  | 5/27 | [Ch 10](./jekyll/2022-05-27-ch10.html)                                    |
-| week 10 | 6/3  | Ch 11                                                                     |
+| week 10 | 6/3  | [Ch 11](./jekyll/2022-06-03-ch11.html)                                    |
 | week 11 | 6/10 | Ch 12                                                                     |
 | week 12 | 6/17 | Ch 13                                                                     |
 | week 13 | 6/24 | Ch 14, 15                                                                 |
@@ -85,7 +85,7 @@ layout: home
 
   - Chapter 12 I/O Systems
 
-  - PART SIX FILE SYSTEM
+- PART SIX FILE SYSTEM
 
   - Chapter 13 File-System Interface
 
