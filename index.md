@@ -37,7 +37,7 @@ layout: home
 | week 10 | 6/3  | [Ch 11](./jekyll/2022-06-03-ch11.html)                                    |
 | week 11 | 6/10 | [Ch 12](./jekyll/2022-06-09-ch12.html)                                    |
 | week 12 | 6/17 | Ch 13                                                                     |
-| week 13 | 6/24 | Ch 14, 15                                                                 |
+| week 13 | 6/24 | Ch 14                                                                 |
 | week 14 | 7/1  | Ch 15                                                                     |
 | week 15 | 7/8  | Ch 16                                                                     |
 | week 16 | 7/15 | Ch 17, 18                                                                 |
