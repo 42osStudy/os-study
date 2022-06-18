@@ -19,7 +19,7 @@ layout: home
 - jiwolee
 - sujpark
 - tkang
-- youngmki
+- youngmki(~week11)
 - mkim3 (~week5)
 - sunmlee (~week5)
 
@@ -124,7 +124,7 @@ layout: home
 - ch9 sujpark
 - ch10 tkang
 - ch11 chulee
-- ch12 -
+- ch12 yunselee
 - ch13 hejang
 - ch14 jiwolee
 - ch15 jchoi
@@ -132,5 +132,5 @@ layout: home
 - ch17 chulee
 - ch18 -
 - ch19 jaekim
-- ch20 youngmki
+- ch20 -
 - ch21 yunselee
