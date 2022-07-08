@@ -36,10 +36,10 @@ layout: home
 | week 9  | 5/27 | [Ch 10](./jekyll/2022-05-27-ch10.html)                                    |
 | week 10 | 6/3  | [Ch 11](./jekyll/2022-06-03-ch11.html)                                    |
 | week 11 | 6/10 | [Ch 12](./jekyll/2022-06-09-ch12.html)                                    |
-| week 12 | 6/17 | [Ch 13](./jekyll/2022-06-13-ch13.html)                                 |
-| week 13 | 6/24 | [Ch 14](./jekyll/2022-06-24-ch14.html)                                |
+| week 12 | 6/17 | [Ch 13](./jekyll/2022-06-13-ch13.html)                                    |
+| week 13 | 6/24 | [Ch 14](./jekyll/2022-06-24-ch14.html)                                    |
 | week 14 | 7/1  | Ch 15                                                                     |
-| week 15 | 7/8  | Ch 16                                                                     |
+| week 15 | 7/8  | [Ch 16](./jekyll/2022-07-28-ch16.html)                                    |
 | week 16 | 7/15 | Ch 17, 18                                                                 |
 | week 17 | 7/22 | Ch 19                                                                     |
 | week 18 | 7/29 | Ch 20                                                                     |
@@ -130,7 +130,7 @@ layout: home
 - ch15 jchoi
 - ch16 dha
 - ch17 chulee
-- ch18 -
+- ch18 yunslee
 - ch19 jaekim
 - ch20 -
 - ch21 yunselee
