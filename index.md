@@ -40,7 +40,7 @@ layout: home
 | week 13 | 6/24 | [Ch 14](./jekyll/2022-06-24-ch14.html)                                    |
 | week 14 | 7/1  | Ch 15                                                                     |
 | week 15 | 7/8  | [Ch 16](./jekyll/2022-07-28-ch16.html)                                    |
-| week 16 | 7/15 | Ch 17, 18                                                                 |
+| week 16 | 7/15 | [Ch 17](./jekyll/2022-07-13-ch17.html), 18                                                                 |
 | week 17 | 7/22 | Ch 19                                                                     |
 | week 18 | 7/29 | Ch 20                                                                     |
 | week 19 | 8/5  | Ch 21                                                                     |
