@@ -130,7 +130,7 @@ layout: home
 - ch15 jchoi
 - ch16 dha
 - ch17 chulee
-- ch18 yunslee
+- ch18 yunselee
 - ch19 jaekim
-- ch20 -
+- ch20 yunselee
 - ch21 yunselee
