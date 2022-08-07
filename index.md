@@ -17,7 +17,7 @@ layout: home
 - jaekim
 - jchoi
 - jiwolee
-- sujpark
+- sujpark(~week17)
 - tkang
 - youngmki(~week11)
 - mkim3 (~week5)
@@ -38,12 +38,12 @@ layout: home
 | week 11 | 6/10 | [Ch 12](./jekyll/2022-06-09-ch12.html)                                    |
 | week 12 | 6/17 | [Ch 13](./jekyll/2022-06-13-ch13.html)                                    |
 | week 13 | 6/24 | [Ch 14](./jekyll/2022-06-24-ch14.html)                                    |
-| week 14 | 7/1  | Ch 15                                                                     |
+| week 14 | 7/1  | [Ch 15](./jekyll/2022-07-01-ch15.html)                                    |
 | week 15 | 7/8  | [Ch 16](./jekyll/2022-07-08-ch16.html)                                    |
 | week 16 | 7/15 | [Ch 17](./jekyll/2022-07-13-ch17.html), [Ch 18](./jekyll/2022-07-15-ch18.html)|
-| week 17 | 7/22 | Ch 19                                                                     |
-| week 18 | 7/29 | Ch 20                                                                     |
-| week 19 | 8/5  | Ch 21                                                                     |
+| week 17 | 7/22 | [Ch 19](./jekyll/2022-07-22-ch19.html)                                    |
+| week 18 | 7/29 | [Ch 20](./jekyll/2022-07-29-ch20.html)                                    |
+| week 19 | 8/5  | [Ch 21](./jekyll/2022-08-05-ch21.html)                                    |
 
 # 추천 진행 강의
 
